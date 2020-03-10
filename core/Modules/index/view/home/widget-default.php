@@ -22,7 +22,7 @@ foreach($products as $product){
   </ul>
 </div>
 <?php endif;?>
-		<h1>Inventio Lite</h1>
+		<h1>Active Cell</h1>
 
 
 <?php
