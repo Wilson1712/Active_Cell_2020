@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Olvido su clave</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>¿Olido su clave?</h2>
+  <p><code>Ingrese aqui su correo electronico</code></p>
+  <form action="recuperarPass.php" class="was-validated" method="POST">
+    <div class="form-group">
+      <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
+      <div class="valid-feedback">Valido.</div>
+      <div class="invalid-feedback">Ingrese aqui su correo electronico.</div>
+    </div>
+    <button class="waves-effect waves-light btn modal-trigger" type="submit" class="btn btn-primary" href="recuperarPass.php">Enviar</button>
+  </form>
+</div>
+</div>
+
+
+</body>
+</html>

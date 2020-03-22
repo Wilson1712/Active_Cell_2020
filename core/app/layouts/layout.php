@@ -183,6 +183,9 @@
             <div class="col-xs-12">
               <button type="submit" class="btn btn-primary btn-block btn-flat">Acceder</button>
             </div><!-- /.col -->
+            <div class="input-field col s0">
+                <a class="waves-effect waves-light btn modal-trigger" href="olvidosuclave.html">Olvido su contraseña</a>
+              </div> 
           </div>
         </form>
       </div><!-- /.login-box-body -->
