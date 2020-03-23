@@ -166,7 +166,7 @@
       <?php else:?>
 <div class="login-box">
       <div class="login-logo">
-        <a href="./">ACTIVE<b>CELLL</b></a>
+        <a href="./">ACTIVE<b>CELL</b></a>
       </div><!-- /.login-logo -->
       <div class="login-box-body">
         <form action="./?action=processlogin" method="post">
