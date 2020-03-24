@@ -22,7 +22,21 @@
 				?>
 				<tr>
 				<td><?php echo $user->name." ".$user->lastname; ?></td>
-				<td style="width:130px;"><a href="index.php?view=editcategory&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?view=delcategory&id=<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
+				<td style="width:130px;"><a href="index.php?view=editcategory&id=<?php echo $user->id;?>" class="btn btn-warning btn-xs">Editar</a> 
+				<a href="#"id="id-<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
+				<script>
+				$("#id-"+<?php echo $user->id; ?>).click(function(){
+				x = confirm("Estas seguro que quieres eliminar esto ??");
+				if(x==true){
+					window.location = "index.php?view=delcategory&id=<?php echo $user->id;?>&id=<?php echo $user->id;?>";
+				}
+				if(x==false){
+					window.location = "./index.php?view=categories";
+				}
+
+			});	
+				</script>
+
 				</tr>
 				<?php
 
