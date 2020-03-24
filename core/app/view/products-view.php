@@ -88,7 +88,19 @@ if($px<=$npaginas):
 
 		<td style="width:70px;">
 		<a href="index.php?view=editproduct&id=<?php echo $product->id; ?>" class="btn btn-xs btn-warning"><i class="glyphicon glyphicon-pencil"></i></a>
-		<a href="index.php?view=delproduct&id=<?php echo $product->id; ?>" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a>
+		<a href="#" id="id-<?php echo  $product->id; ?>" class="btn btn-xs btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
+		<script>
+				$("#id-"+<?php echo $product->id; ?>).click(function(){
+				x = confirm("Estas seguro que quieres eliminar esto ??");
+				if(x==true){
+					window.location = "index.php?view=delproduct&id=<?php echo $product->id;?>&id=<?php echo $product->id;?>";
+				}
+				if(x==false){
+					window.location = "index.php?view=products";
+				}
+
+			});	
+		</script>
 		</td>
 	</tr>
 	<?php endforeach;?>

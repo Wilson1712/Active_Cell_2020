@@ -1,8 +1,8 @@
 <?php
 
-$operations = OperationData::getAllByProductId($_GET["id"]);
+$product = OperationData::getAllByProductId($_GET["id"]);
 
-foreach ($operations as $op) {
+foreach ($product as $op) {
 	$op->del();
 }
 
