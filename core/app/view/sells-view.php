@@ -49,7 +49,7 @@ $total= $sell->total-$sell->discount;
 		<td style="width:30px;"><a href="#" id="id-<?php echo $sell->id; ?>" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i></a></td>
 		<script>
 				$("#id-"+<?php echo $sell->id; ?>).click(function(){
-				x = confirm("Estas seguro que quieres eliminar esto ??");
+				x = confirm("Esta seguro que quiere eliminarlo ??");
 				if(x==true){
 					window.location = "index.php?view=delsell&id=<?php echo $sell->id;?>&id=<?php echo $sell->id;?>";
 				}

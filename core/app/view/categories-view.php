@@ -26,7 +26,7 @@
 				<a href="#"id="id-<?php echo $user->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
 				<script>
 				$("#id-"+<?php echo $user->id; ?>).click(function(){
-				x = confirm("Estas seguro que quieres eliminar esto ??");
+				x = confirm("Esta seguro que quiere eliminar esta categoria ??");
 				if(x==true){
 					window.location = "index.php?view=delcategory&id=<?php echo $user->id;?>&id=<?php echo $user->id;?>";
 				}

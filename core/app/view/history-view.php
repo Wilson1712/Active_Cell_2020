@@ -107,7 +107,7 @@ $ototal = -1*OperationData::GetOutputQYesF($product->id);
 			<td style="width:40px;"><a href="#" id="oper-<?php echo $operation->id; ?>" class="btn tip btn-xs btn-danger" title="Eliminar"><i class="glyphicon glyphicon-trash"></i></a> </td>
 			<script>
 			$("#oper-"+<?php echo $operation->id; ?>).click(function(){
-				x = confirm("Estas seguro que quieres eliminar esto ??");
+				x = confirm("Esta seguro que quiere eliminar esta historia ??");
 				if(x==true){
 					window.location = "index.php?view=deleteoperation&ref=history&pid=<?php echo $operation->product_id;?>&opid=<?php echo $operation->id;?>";
 				}

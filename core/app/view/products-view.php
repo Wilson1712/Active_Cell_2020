@@ -96,7 +96,7 @@ if($px<=$npaginas):
 		<a href="#" id="id-<?php echo  $product->id; ?>" class="btn btn-xs btn-danger" title="Eliminar"><i class="fa fa-trash"></i></a>
 		<script>
 				$("#id-"+<?php echo $product->id; ?>).click(function(){
-				x = confirm("Estas seguro que quieres eliminar esto ??");
+				x = confirm("Esta seguro que quiere eliminar este producto ??");
 				if(x==true){
 					window.location = "index.php?view=delproduct&id=<?php echo $product->id;?>&id=<?php echo $product->id;?>";
 				}
