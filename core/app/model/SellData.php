@@ -44,6 +44,10 @@ class SellData {
 		Executor::doit($sql);
 	}
 
+	public function guardarVenta(){
+        $this->model->guardarVenta($_POST);
+    }
+
 	public function update_box(){
 		$sql = "update ".self::$tablename." set box_id=$this->box_id where id=$this->id";
 		Executor::doit($sql);
