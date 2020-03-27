@@ -3,27 +3,74 @@
 <head>
   <title>Olvido su clave</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="plugins/jquery/jquery-2.1.4.min.js"></script>
+    <script src="plugins/morris/raphael-min.js"></script>
+    <script src="plugins/morris/morris.js"></script>
+      <link rel="stylesheet" href="plugins/morris/morris.css">
+      <link rel="stylesheet" href="plugins/morris/example.css">
+              <script src="plugins/jspdf/jspdf.min.js"></script>
+              <script src="plugins/jspdf/jspdf.plugin.autotable.js"></script>
+    
+    <script type="text/javascript" src="plugins/jsqrcode/llqrcode.js"></script>
+    <script type="text/javascript" src="plugins/jsqrcode/webqr.js"></script>
+    
+
 </head>
 <body>
+  <nav class="navbar navbar-static-top" role="navigation">
 
-<div class="container">
-  <h2>¿Olido su clave?</h2>
-  <p><code>Ingrese aqui su correo electronico</code></p>
-  <form action="recuperarPass.php" class="was-validated" method="POST">
-    <div class="form-group">
-      <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
-      <div class="valid-feedback">Valido.</div>
-      <div class="invalid-feedback">Ingrese aqui su correo electronico.</div>
+    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+
+    <div class="navbar-custom-menu">
+      <ul class="nav navbar-nav">
+        <div class="pull-right">
+          <a href="./logout.php" class="btn btn-default btn-flat">Volver al inicio de sesión</a>
+        </div>
+      </ul>
     </div>
-    <button class="waves-effect waves-light btn modal-trigger" type="submit" class="btn btn-primary" href="recuperarPass.php">Enviar</button>
-  </form>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <div >
+    <div class="card">
+      <div class="card-header" data-background-color="green"> 
+        <div class="card-content">
+          <div class="row">
+              <div class="input-field col s12 ">
+                  <div class="row ">
+                    <div class="container col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
+                      <h4>Bienvenido al recuperar contraseña..!<a href="" class="!"></a></h4>
+                      <div class="row">
+                        <form action="recuperarPass.php" class="was-validated col-sm-12 col-md-16" method="POST">
+                          <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
+                            <div class="valid-feedback">Valido.</div>
+                            <div class="invalid-feedback">Ingrese aqui su correo electronico.</div>
+                          </div>
+                          <div class="form-group">
+                            <button class="waves-effect waves-light btn modal-trigger" type="submit" class="btn btn-primary" href="recuperarPass.php">Enviar</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>  
 </div>
 </div>
+
 
 
 </body>
