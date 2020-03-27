@@ -105,6 +105,33 @@ class SellData {
 
 	}
 
+	// public function guardarVenta($datos){
+
+    //     $value = "(id,Nombre, person_id, user_id, operation_type_id, box_id, total, cash, discount, created_at)VALUES
+    //      (:id, :Nombre, :person_id, :user_id, :operation_type_id, :box_id, :total, :cash, :discount, :created_at)";
+        
+    //     foreach ($datos['productos'] as $producto) {
+    //         $array = [
+    //             ':id' => intval($datos['id']),
+    //                ':Nombre' => $datos['Nombre'], 
+    //                 ':person_id' => $datos['person_id'],
+    //                 ':user_id' => intval($datos['user_id']),
+    //                 ':operation_type_id' => intval($datos['operation_type_id']),
+    //                 ':box_id' => intval($producto['box_id']), 
+    //                 ':total' => intval($producto['total']), 
+    //                 ':cash' => intval($producto['cash']), 
+    //                 ':discount' => intval($producto['discount']), 
+    //     ////            ':IdUsuario' => $datos['IdUsuario'],
+    //     ////            ':Fecha' => $datos['fecha'],
+    //      //           ':Cantidad' => $datos['productos'][0]['cantidad'], 
+    //                  ':created_at' => intval($producto['created_at']),
+    //             ];
+    //             $data =$this->db->insert("ventas",$array,$value);
+    //     }
+        
+       
+    
+
 }
 
 ?>

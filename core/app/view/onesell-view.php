@@ -75,11 +75,6 @@ $user = $sell->getUser();
 <?php
 	}
 	?>
-	<div class="mdl-card__actions mdl-card--border">
-              <form action="generar/generar-pdf.php">
-                  <input type="submit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" value="Crear PDF">
-              </form>
-    </div>
 </table>
 <br><br>
 <div class="row">
