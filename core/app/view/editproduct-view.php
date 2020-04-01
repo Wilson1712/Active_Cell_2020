@@ -28,7 +28,7 @@ if($product!=null):
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-3 control-label">Codigo de barras*</label>
     <div class="col-md-8">
-      <input type="text" name="barcode" class="form-control" id="barcode" value="<?php echo $product->barcode; ?>" placeholder="Codigo de barras del Producto" required>
+      <input type="text" name="barcode" class="form-control" min="1" max="999999999999999" id="barcode" value="<?php echo $product->barcode; ?>" placeholder="Codigo de barras del Producto" required>
     </div>
   </div>
     <div class="form-group">

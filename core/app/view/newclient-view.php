@@ -8,13 +8,13 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre*</label>
     <div class="col-md-6">
-      <input type="text" name="name" required class="form-control" id="name" placeholder="Nombre">
+      <input type="text" name="name" required class="form-control" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" id="name" placeholder="Nombre">
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido*</label>
     <div class="col-md-6">
-      <input type="text" name="lastname" required class="form-control" id="lastname" placeholder="Apellido">
+      <input type="text" name="lastname" required class="form-control" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" id="lastname" placeholder="Apellido">
     </div>
   </div>
   <div class="form-group">
@@ -26,14 +26,14 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
     <div class="col-md-6">
-      <input type="text" name="email1" required class="form-control" id="email1" placeholder="Email">
+      <input type="text" name="email1" required class="form-control" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email1" placeholder="Email">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Telefono*</label>
     <div class="col-md-6">
-      <input type="text" name="phone1" required class="form-control" id="phone1" placeholder="Telefono">
+      <input type="number" min="1" max="9999999999" name="phone1" required class="form-control" pattern="[0-9]{2,}+" id="phone1" placeholder="Telefono">
     </div>
   </div>
 

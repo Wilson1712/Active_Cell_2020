@@ -16,7 +16,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Codigo de Barras*</label>
     <div class="col-md-6">
-      <input type="number" name="barcode" id="product_code" required class="form-control" id="barcode" placeholder="Codigo de Barras del Producto">
+      <input type="number" name="barcode" min="1" max="999999999999999" id="product_code" required class="form-control" id="barcode" placeholder="Codigo de Barras del Producto">
     </div>
   </div>
   <div class="form-group">
@@ -56,7 +56,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Unidad*</label>
     <div class="col-md-6">
-      <input type="text" name="unit" required class="form-control" id="unit" placeholder="Unidad del Producto">
+      <input type="text" name="unit" min="1" max="999" pattern="[0-9]" required class="form-control" id="unit" placeholder="Unidad del Producto">
     </div>
   </div>
 
@@ -69,14 +69,14 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Minima en inventario:</label>
     <div class="col-md-6">
-      <input type="number" name="inventary_min" class="form-control" id="inputEmail1" placeholder="Minima en Inventario (Default 10)">
+      <input type="number" name="inventary_min" min="1" max="999" class="form-control" id="inputEmail1" placeholder="Minima en Inventario (Default 10)">
     </div>
   </div>
 
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Inventario inicial:</label>
     <div class="col-md-6">
-      <input type="number" name="q" class="form-control" id="inputEmail1" placeholder="Inventario inicial">
+      <input type="number" name="q" class="form-control" min="1" max="999" id="inputEmail1" placeholder="Inventario inicial">
     </div>
   </div>
 

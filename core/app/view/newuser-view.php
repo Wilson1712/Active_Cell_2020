@@ -8,25 +8,25 @@
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre*</label>
     <div class="col-md-6">
-      <input type="text" name="name" required class="form-control" id="name" placeholder="Nombre">
+      <input type="text" name="name" required class="form-control" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" id="name" placeholder="Nombre">
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Apellido*</label>
     <div class="col-md-6">
-      <input type="text" name="lastname" required class="form-control" id="lastname" placeholder="Apellido">
+      <input type="text" name="lastname" required class="form-control" id="lastname" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" placeholder="Apellido">
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Nombre de usuario*</label>
     <div class="col-md-6">
-      <input type="text" name="username" class="form-control" required id="username" placeholder="Nombre de usuario">
+      <input type="text" name="username" class="form-control" required id="username" pattern="^([a-z]+[0-9]{0,2}){5,12}$" placeholder="Nombre de usuario">
     </div>
   </div>
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Email*</label>
     <div class="col-md-6">
-      <input type="text" name="email" required class="form-control" id="email" placeholder="Email">
+      <input type="text" name="email" required class="form-control" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" placeholder="Email">
     </div>
   </div>
 
