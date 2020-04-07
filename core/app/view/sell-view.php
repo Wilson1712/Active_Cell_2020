@@ -8,6 +8,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/venta.js"></script>
+  <link rel="stylesheet" href="print.css" type="text/css" media="print" />
 </head>
 <div class="row">
 	<div class="col-md-12">
@@ -174,8 +175,17 @@ $clients = PersonData::getClients();
       <div class="checkbox">
         <label>
 		<a href="index.php?view=clearcart" class="btn btn-lg btn-danger"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
-        <button onclick="guardarVenta()" class="btn btn-lg btn-primary" id="btn" ><i class="glyphicon glyphicon-usd"></i><i class="glyphicon glyphicon-usd"></i> Finalizar Venta</button>
+        <button onclick="window.print();" class="btn btn-lg btn-primary" id="btn" ><i class="glyphicon glyphicon-usd"></i><i class="glyphicon glyphicon-usd"></i> Finalizar Venta</button>
+				<style type="text/css">
+		@media print {
+			#printbtn {
+				display :  none;
+			}
+		}
+		</style>
+		<!-- <input id ="printbtn" type="button" value="Print this page" onclick="window.print();" >
 		</label>
+		<input id="printpagebutton" type="button" value="Print this page" onclick="printpage()"/>` -->
 		<!-- <script>
 			let product = <?php //echo $product;?>
 		</script> -->
@@ -197,6 +207,19 @@ $clients = PersonData::getClients();
 				else{e.preventDefault();}
 		}
 	});
+</script>
+<script type="text/javascript">
+    function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        //Set the print button to 'visible' again 
+        //[Delete this line if you want it to stay hidden after printing]
+        printButton.style.visibility = 'visible';
+    }
 </script>
 </div>
 </div>

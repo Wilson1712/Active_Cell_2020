@@ -83,9 +83,9 @@ foreach($products as $product){
 	<div class="col-md-12">
 <?php if($found):?>
 <div class="btn-group pull-right">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <!-- <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     <i class="fa fa-download"></i> Descargar <span class="caret"></span>
-  </button>
+  </button> -->
   <ul class="dropdown-menu" role="menu">
     <li><a href="report/alerts-word.php">Word 2007 (.docx)</a></li>
   </ul>

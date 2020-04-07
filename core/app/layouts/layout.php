@@ -206,6 +206,7 @@
     <script src="plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript">
+    <script src='js/venta.js'></script>
       $(document).ready(function(){
         $(".datatable").DataTable({
           "language": {

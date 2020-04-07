@@ -1,0 +1,6 @@
+@media print {
+    /* Add your custom css rules here */
+   input {
+       display: none;
+   }
+}
