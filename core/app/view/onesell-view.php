@@ -12,12 +12,11 @@
 <?php
 $sell = SellData::getById($_GET["id"]);
 $operations = OperationData::getAllProductsBySellId($_GET["id"]);
-$total = 0;
-?>
+$total = 0;?>
 <?php
 if(isset($_COOKIE["selled"])){
 	foreach ($operations as $operation) {
-//		print_r($operation);
+//		print_r($operati	on);
 		$qx = OperationData::getQYesF($operation->product_id);
 		// print "qx=$qx";
 			$p = $operation->getProduct();

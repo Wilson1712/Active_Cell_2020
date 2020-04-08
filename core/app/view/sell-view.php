@@ -113,9 +113,7 @@ $product = ProductData::getById($p["product_id"]);
 <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Cliente</label>
     <div class="col-lg-10">
-    <?php 
-$clients = PersonData::getClients();
-    ?>
+    <?php	$clients = PersonData::getClients();    ?>
     <select name="client_id" class="form-control">
     <option value="">-- NINGUNO --</option>
     <?php foreach($clients as $client):?>
