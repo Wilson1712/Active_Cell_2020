@@ -19,6 +19,8 @@ namespace PhpOffice\PhpWord;
 
 use PhpOffice\PhpWord\Element\Section;
 use PhpOffice\PhpWord\Exception\Exception;
+// use PhpOffice\PhpWord\Shared\String;
+
 
 /**
  * PHPWord main class

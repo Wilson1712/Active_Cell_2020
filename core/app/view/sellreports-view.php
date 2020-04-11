@@ -82,6 +82,7 @@ $clients = PersonData::getClients();
 			 	<?php $supertotal = 0; ?>
 <table class="table table-bordered">
 	<thead>
+		<th>Cliente</th>
 		<th>Id</th>
 		<th>Subtotal</th>
 		<th>Descuento</th>
@@ -90,6 +91,7 @@ $clients = PersonData::getClients();
 	</thead>
 <?php foreach($operations as $operation):?>
 	<tr>
+		<td><?php echo $p->$clients; ?></td>
 		<td><?php echo $operation->id; ?></td>
 		<td>$ <?php echo number_format($operation->total,2,'.',','); ?></td>
 		<td>$ <?php echo number_format($operation->discount,2,'.',','); ?></td>
