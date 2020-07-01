@@ -91,7 +91,7 @@ $clients = PersonData::getClients();
 	</thead>
 <?php foreach($operations as $operation):?>
 	<tr>
-		<td><?php echo $p->$clients; ?></td>
+		<td><?php echo $p->name; ?></td>
 		<td><?php echo $operation->id; ?></td>
 		<td>$ <?php echo number_format($operation->total,2,'.',','); ?></td>
 		<td>$ <?php echo number_format($operation->discount,2,'.',','); ?></td>

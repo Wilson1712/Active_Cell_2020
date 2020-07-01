@@ -124,12 +124,7 @@ $clients = PersonData::getClients();
       <input type="text" name="money" required class="form-control" id="money" placeholder="Efectivo">
     </div>
   </div>
-  <div class="form-group">
-	<label for="inputEmail1" class="col-lg-2 control-label">Imei</label>
-	<div class="col-lg-10">
-		<input type="text" name="number" min="1" max="99999999" required class="form-control" id="number" placeholder="Imei 1 y 2" >
-	</div>
-  </div>
+
       <input type="hidden" name="total" value="<?php echo $total; ?>" class="form-control" placeholder="Total">
 
   <div class="row">

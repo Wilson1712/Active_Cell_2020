@@ -21,7 +21,9 @@ class Model {
 	public static function many($query,$aclass){
 		$cnt = 0;
 		$array = array();
+		
 		while($r = $query->fetch_array()){
+			
 			$array[$cnt] = new $aclass;
 			$cnt2=1;
 			foreach ($r as $key => $v) {
@@ -40,8 +42,7 @@ class Model {
 		$found = null;
 		$data = new $aclass;
 		while($r = $query->fetch_array()){
-			$cnt=1;
-			foreach ($r as $key => $v) {
+			$cnt=1;			foreach ($r as $key => $v) {
 				if($cnt>0 && $cnt%2==0){ 
 					$data->$key = $v;
 				}
