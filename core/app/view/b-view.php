@@ -4,14 +4,14 @@
 <!-- Single button -->
 <div class="btn-group pull-right">
 <a href="./index.php?view=boxhistory" class="btn btn-default"><i class="fa fa-clock-o"></i> Historial</a>
-<div class="btn-group">
+<!--<div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     <i class="fa fa-download"></i> Descargar <span class="caret"></span>
   </button>
   <ul class="dropdown-menu pull-right" role="menu">
     <li><a href="report/box-word.php?id=<?php echo $_GET["id"];?>">Word 2007 (.docx)</a></li>
   </ul>
-</div>
+</div>-->
 </div>
 		<h1><i class='fa fa-archive'></i> Corte de Caja #<?php echo $_GET["id"]; ?></h1>
 		<div class="clearfix"></div>

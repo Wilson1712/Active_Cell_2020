@@ -144,10 +144,7 @@ $product = ProductData::getById($p["product_id"]);
 	<td><p>Subtotal</p></td>
 	<td><p><b>$ <?php echo number_format($total*.84); ?></b></p></td>
 </tr>
-<tr>
-	<td><p>IVA</p></td>
-	<td><p><b>$ <?php echo number_format($total*.16); ?></b></p></td>
-</tr>
+
 <tr>
 	<td><p>Total</p></td>
 	<td><p><b>$ <?php echo number_format($total); ?></b></p></td>

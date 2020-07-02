@@ -2,14 +2,14 @@
 	<div class="col-md-12">
 <div class="btn-group pull-right">
 	<a href="index.php?view=newprovider" class="btn btn-default"><i class='fa fa-truck'></i> Nuevo Proveedor</a>
-<div class="btn-group pull-right">
+<!-- div class="btn-group pull-right">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     <i class="fa fa-download"></i> Descargar <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
     <li><a href="report/providers-word.php">Word 2007 (.docx)</a></li>
   </ul>
-</div>
+</div>-->
 </div>
 		<h1>Directorio de Proveedores</h1>
 <br>

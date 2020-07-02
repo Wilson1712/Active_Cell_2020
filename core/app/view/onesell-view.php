@@ -1,12 +1,12 @@
 
-<div class="btn-group pull-right">
+<!--<div class="btn-group pull-right">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     <i class="fa fa-download"></i> Descargar <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
     <li><a href="report/onesell-word.php?id=<?php echo $_GET["id"];?>">Word 2007 (.docx)</a></li>
   </ul>
-</div>
+</div> -->
 <h1>Resumen de Venta</h1>
 <?php if(isset($_GET["id"]) && $_GET["id"]!=""):?>
 <?php
