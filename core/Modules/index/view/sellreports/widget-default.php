@@ -27,7 +27,7 @@ $clients = PersonData::getClients();
 </div>
 
 <div class="col-md-3">
-<input type="submit" class="btn btn-success btn-block" value="Procesar">
+<input type="submit" class="btn btn-success btn-block" value="Procesar" >
 </div>
 
 </div>
@@ -68,13 +68,11 @@ $clients = PersonData::getClients();
 			<?php 
 			$operations = array();
 
-			if($_GET["client_id"]==""){
+			if( $_GET["client_id"]=="" ){
 			$operations = SellData::getAllByDateOp($_GET["sd"],$_GET["ed"],2);
-			}
-			else{
+			} else {
 			$operations = SellData::getAllByDateBCOp($_GET["client_id"],$_GET["sd"],$_GET["ed"],2);
-			} 
-
+			}
 
 			 ?>
 

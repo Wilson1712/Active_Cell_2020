@@ -75,7 +75,6 @@ $clients = PersonData::getClients();
 			$operations = SellData::getAllByDateBCOp($_GET["client_id"],$_GET["sd"],$_GET["ed"],2);
 			} 
 
-
 			 ?>
 
 			 <?php if(count($operations)>0):?>
@@ -89,9 +88,20 @@ $clients = PersonData::getClients();
 		<th>Total</th>
 		<th>Fecha</th>
 	</thead>
+
+	<?php
+		$clients_by_id = array();
+		foreach( $clients as $client ) :
+			$clients_by_id[ $client->id ] = $client;
+		endforeach;
+	?>
 <?php foreach($operations as $operation):?>
 	<tr>
-		<td><?php echo $p->name; ?></td>
+		<td>
+			<?php
+				echo $clients_by_id[ $operation->person_id ]->name;
+			?>
+		</td>
 		<td><?php echo $operation->id; ?></td>
 		<td>$ <?php echo number_format($operation->total,2,'.',','); ?></td>
 		<td>$ <?php echo number_format($operation->discount,2,'.',','); ?></td>
