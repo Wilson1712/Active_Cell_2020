@@ -164,11 +164,11 @@ $product = ProductData::getById($p["product_id"]);
     </div>
   </div>
 <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
+    <div class="col-lg-offset-1 col-lg-12">
       <div class="checkbox">
         <label>
 		<a href="index.php?view=clearcart" class="btn btn-lg btn-danger"><i class="glyphicon glyphicon-remove"></i> Cancelar</a>
-        <button onclick="window.print();" class="btn btn-lg btn-primary" id="btn" ><i class="glyphicon glyphicon-usd"></i><i class="glyphicon glyphicon-usd"></i> Finalizar Venta</button>
+		<button onclick="window.print();" class="btn btn-lg btn-primary" id="btn" ><i class="glyphicon glyphicon-usd"></i><i class="glyphicon glyphicon-usd"></i> Finalizar Venta</button>
 				<style type="text/css">
 		@media print {
 			#printbtn {

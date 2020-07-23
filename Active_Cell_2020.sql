@@ -1,5 +1,5 @@
-create database Active_Cell_2020;
-use Active_Cell_2020;
+create database active_Cell_2020;
+use active_Cell_2020;
 set sql_mode='';
 
 create table user(

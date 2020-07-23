@@ -56,7 +56,7 @@ $categories = CategoryData::getAll();
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">Unidad*</label>
     <div class="col-md-6">
-      <input type="text" name="unit" min="1" max="999" pattern="[0-9]" required class="form-control" id="unit" placeholder="Unidad del Producto">
+      <input type="text" name="unit" min="1" max="99" pattern="[0-99]" required class="form-control" id="unit" placeholder="Unidad del Producto">
     </div>
   </div>
 
